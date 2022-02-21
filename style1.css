@@ -14,7 +14,7 @@ body{
     line-height: 20px;
 }
 .text {
-    color: #000000;
+    color: #002426;
     position: absolute;
     top: 280px;
     left: 30px;
@@ -22,7 +22,7 @@ body{
     font-size: 20px;
 }
 .text2 {
-    color: #000000;
+    color: #002426;
     position: absolute;
     top: 300px;
     left: 55px;
@@ -42,7 +42,7 @@ body{
 
 .resume_wrapper .resume_left{
     width: 35%;
-    background: #1C1C1C;
+    background: #002426;
 }
 
 
@@ -61,6 +61,13 @@ body{
 
 
 }
+.resume_wrapper .resume_left .resume_image2 img {
+    width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
 .resume_wrapper .resume_title{
     color: #fff;
     text-transform: uppercase;
@@ -73,16 +80,16 @@ body{
 }
 
 .resume_wrapper .resume_left .resume_info{
-    color: #84838b;
+    color: #ffffff;
 }
 
 .resume_wrapper .resume_left .resume_bottom{
-    padding: 20px 30px;
+    padding: 15px 20px;
 }
 
 .resume_wrapper .resume_item{
-    padding: 20px 0;
-    border-bottom: 1px solid #0175b2;
+    padding: 15px 0;
+    border-bottom: 1px solid #da9349;
 }
 
 
@@ -133,7 +140,7 @@ body{
     position: absolute;
     top: 0;
     left: 0;
-    background: #0175b2;
+    background: #00375b;
     width: 100%;
     height: 100%;
 }
@@ -141,11 +148,11 @@ body{
 .resume_wrapper .resume_right{
     width: 65%;
     padding: 20px 40px;
-    color: #26252d;
+    color: #002426;
 }
 
 .resume_wrapper .resume_right .resume_namerole .name{
-    color: #26252d;
+    color: #002426;
     font-size: 32px;
 }
 
@@ -155,7 +162,7 @@ body{
 }
 
 .resume_wrapper .resume_right .resume_item .resume_title{
-    color: #26252d;
+    color: #002426;
 }
 
 .resume_wrapper .resume_right .resume_data{
@@ -182,7 +189,7 @@ body{
     width: 10px;
     height: 10px;
     background: #fff;
-    border: 1px solid #26252d;
+    border: 1px solid #002426;
     border-radius: 50%;
 }
 
@@ -192,8 +199,8 @@ body{
     top: 17px;
     right: 4px;
     width: 3px;
-    height: 90%;
-    background: #0175b2;
+    height: 100%;
+    background: #00375b;
 }
 
 .resume_wrapper .resume_right .resume_data:last-child .year:after{
@@ -209,10 +216,35 @@ body{
 }
 
 .resume_wrapper .resume_right .resmue_interests .interests .int_icon{
-    font-size: 38px;
-    color: #0175b2;
-    margin-bottom: 10px;
+    font-size: 60px;
+    color: #00375b;
+    margin-bottom: 20px;
 }
 
 
 
+@media screen and (max-width: 424px){
+    .resume_wrapper .resume_right{
+        padding: 20px 30px;
+    }
+    .resume_wrapper .resume_right .resume_data{
+        flex-direction: column;
+    }
+    .resume_wrapper .resume_right .resume_data .year{
+        padding: 0;
+        margin-bottom: 5px;
+        width: 100%;
+        color: #00375b;
+    }
+    .resume_wrapper .resume_right .resume_data .year:before,
+    .resume_wrapper .resume_right .resume_data .year:after{
+        display: none;
+    }
+    .resume_wrapper .resume_right .resume_data .content{
+        width: 100%;
+        padding: 0;
+    }
+    .resume_wrapper .resume_right .resmue_interests .interests .int_icon{
+        font-size: 24px;
+    }
+}
